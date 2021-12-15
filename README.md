@@ -8,7 +8,7 @@ Things you may want to cover:
 * Ruby version - 3.0.0p0, Rails version -  6.1.4.3
 
 * Setup
-#clone the repo
+-clone the repo
     bundle install
 
 * start the server
