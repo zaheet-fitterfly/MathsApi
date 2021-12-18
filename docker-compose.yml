@@ -1,0 +1,16 @@
+version: "3.0"
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: my_api
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: my_api
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      CALCULATOR_DATABASE_PASSWORD: password
